@@ -1,0 +1,24 @@
+/* assets/scss/components/_cards.scss */
+.card-cafe {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  transform: translateY(0);
+  transition: transform .2s ease, box-shadow .2s ease;
+  animation: fadeUp .6s ease both;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0,0,0,.12);
+  }
+
+  .card-img-top {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1.1rem 1.2rem;
+  }
+}

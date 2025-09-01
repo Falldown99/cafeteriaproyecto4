@@ -1,0 +1,24 @@
+/* assets/scss/components/_navbar.scss */
+.navbar-custom {
+  background: linear-gradient(rgba(62,39,35,.85), rgba(62,39,35,.85));
+  backdrop-filter: blur(8px);
+
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color .2s ease;
+  }
+
+  .nav-link {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 0; height: 2px;
+      background: $cafe-claro;
+      transition: width .3s ease;
+    }
+    &:hover:after { width: 100%; }
+  }
+}

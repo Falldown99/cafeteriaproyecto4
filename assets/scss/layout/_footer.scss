@@ -1,0 +1,13 @@
+/* assets/scss/layout/_footer.scss */
+.footer {
+  background: linear-gradient(rgba(62,39,35,.95), rgba(62,39,35,.98));
+  color: #eee;
+
+  .footer-title { color: #fff; }
+
+  .footer-links {
+    display: grid;
+    gap: .5rem;
+    a { color: #eee; &:hover { color: $cafe-claro; } }
+  }
+}

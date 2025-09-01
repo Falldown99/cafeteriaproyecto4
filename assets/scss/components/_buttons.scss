@@ -1,0 +1,13 @@
+/* assets/scss/components/_buttons.scss */
+.btn-outline-cafe {
+  @extend %btn-base;
+  border: 2px solid $primary;
+  color: $primary;
+  background: transparent;
+
+  &:hover {
+    background: $primary;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+}

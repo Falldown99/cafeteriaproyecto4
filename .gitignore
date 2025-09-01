@@ -1,0 +1,8 @@
+# Dependencias y caches
+node_modules/
+.sass-cache/
+*.map
+
+# SO
+.DS_Store
+Thumbs.db

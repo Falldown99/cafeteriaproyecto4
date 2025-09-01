@@ -1,0 +1,46 @@
+/* assets/scss/pages/_home.scss */
+#about, #menu, #gallery, #testimonials, #contact {
+  scroll-margin-top: 80px; // mejora UX en anclas debajo de navbar fija
+}
+
+.badge-cafe {
+  display: inline-block;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  background: rgba(141,110,99,.1);
+  color: $cafe-oscuro;
+  font-weight: 600;
+}
+
+// Generación dinámica de utilidades con map + @each (operadores SASS)
+$spacers: (xs: .25rem, sm: .5rem, md: 1rem, lg: 1.5rem);
+@each $name, $size in $spacers {
+  .mt-#{$name} { margin-top: $size; }
+  .mb-#{$name} { margin-bottom: $size; }
+  .pt-#{$name} { padding-top: $size; }
+  .pb-#{$name} { padding-bottom: $size; }
+}
+
+/* PATCH: mejorar contraste en sección #about */
+#about {
+  color: $cafe-oscuro;
+}
+
+
+/* PATCH v2: contraste robusto en #about (texto sobre imagen) */
+#about {
+  // Fuerza color oscuro incluso si vienen utilitarias tipo .text-white
+  h1, h2, h3, h4, p, small, span, .text-white { 
+    color: $cafe-oscuro !important; 
+    text-shadow: none !important;
+  }
+
+  // Si el texto está sobre imagen, darle una plaquita clara para contraste
+  .about-caption, .about-text, .caption, .content-box, .overlay-text {
+    background-color: rgba($fondo-claro, .88);
+    padding: .75rem 1rem;
+    border-radius: .75rem;
+    display: inline-block;
+  }
+}
+

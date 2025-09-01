@@ -1,0 +1,20 @@
+/* assets/scss/base/_variables.scss */
+// Paleta
+$cafe-oscuro: #3e2723;
+$cafe-medio:  #6d4c41;
+$cafe-claro:  #d7ccc8;
+$fondo-claro: #fdf6f0;
+$primary:     #8d6e63;
+
+// Tipografías
+$font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-headings: 'Georgia', serif;
+
+// Z-index
+$z-header: 1000;
+
+// Breakpoints Bootstrap-like (por compatibilidad mental)
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;

@@ -1,0 +1,14 @@
+/* assets/scss/main.scss */
+@use 'base/variables';
+@use 'mixins/breakpoints';
+@use 'mixins/helpers';
+@use 'base/reset';
+@use 'base/typography';
+@use 'utils/animations';
+@use 'components/navbar';
+@use 'components/hero';
+@use 'components/cards';
+@use 'components/buttons';
+@use 'layout/grid';
+@use 'layout/footer';
+@use 'pages/home';
